@@ -1,36 +1,48 @@
     <!DOCTYPE html>
-    <html>
+    <html lang="es">
         <head>
-            <meta charset="uft-8">
+            <meta charset="UFT-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <link href="https://maxcdn.bootstrapcdn.com/font-..." rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+            <link rel="icon" href="imagenes/logo.ico">
             <link rel="stylesheet" href="styles.css">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>Mi Portfolio</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Mi Portfolio  web</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         </head>
         <body>
+          <div class="contenedor">
+            <!--CABEZA DE LA PAGINA-->
             <header>
-                <nav class="navbar navbar-expand-lg bg-light">
-                 <ul class="menu">
-                    <img src="portada.jpg" alt="">
-                    <li><a href="#">Sobre mi</a></li>
-                    <li><a href="#">Estudios academicos</a></li>
-                    <li><a href="#">Experiencia laboral</a></li>
-                    <li><a href="#">Habilidades</a></li>
-                    <li><a href="#">Contactos</a></li>
-                    <li><a href="#">CV</a></li>
-                 </ul>
-                </nav>
                  <div class="perfil d-flex justify-content-center align-items-center flex-column">
-    
-                 <h1>Samuel Ernesto Acuña </h1>
-                 <h2>Programador Full Stack Web Jr.</h2>
-                 <p> Soy un programador web, muy comprometido con los trabajos que realizo, iendo muy responsable y entregando los proyectos en tiempo y forma, 
+                 <h1>Bienvenidos</h1>            
+                 <h2 class="highlight"> Soy Samuel Ernesto Acuña. </h2>
+                 <h3>Soy un Desarrollador Web Full Stack Jr.</h3>
+                 <p> Un programador web, muy comprometido con los trabajos que realizo, iendo muy responsable y entregando los proyectos en tiempo y forma, 
                  me ajusto muy bien a los presupuestos </p>
                  <button class="btn btn-primary">
                     Login
                  </button>
                  </div>
             </header>
+            <!--BARRA DE NAVEGACION-->
+            <nav class="navbar bg-dark" data-bs-theme="dark">
+              <ul class="menu">
+                 <a class="navbar-brand" href="#">
+                   <img src="imagenes/portada.jpg" alt="Logo" width="75" height="50" class="d-inline-block align-text-top">
+                   <span class="navbar-brand mb-0 h1">PORTAFOLIO</span>
+                 </a>
+                 <li><a href="#">Inicio</a></li>
+                 <li><a href="#">Sobre mi</a></li>
+                 <li><a href="#">Estudios academicos</a></li>
+                 <li><a href="#">Experiencia laboral</a></li>
+                 <li><a href="#">Habilidades</a></li>
+                 <li><a href="#">Contactos</a></li>
+                 <li><a href="#">CV</a></li>
+              </ul>
+             </nav>
+             <!--CUERPO DE LA PAGINA-->
             <section>
                 <div class="card text-center">
                     <div class="card-header">
@@ -55,11 +67,35 @@
                   </div>
             </section>
             <h2>Habilidades</h2>
-           <div class="redes">
-            <a href="https://www.facebook.com/samuel.acuna.790/">Facebook</a>
-            <a href="https://www.instagram.com/samiacuna_7/">Instagram</a>
-            <a href="">Github</a>
-           </div>
-    
+            <!--PIE DE PAGINA-->
+            <footer class="pie-pagina">
+              <div class="grupo-1">
+                <div class="box">
+                  <figure>
+                    <a href="#">
+                      <img src="imagenes/piedepagina.png" alt="logo de samiño">
+                    </a>
+                  </figure>
+                </div>
+                <div class="box">
+                  <h2>SOBRE NOSOTROS</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur. Quidem sequi ullam fuga! </p>
+                </div>
+                <div class="box">
+                  <h2>SIGUENOS</h2>
+                  <div class="redes">
+                    <ul>
+                      <li><a href="https://www.facebook.com/samuel.acuna.790/" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                      <li><a href="https://www.instagram.com/samiacuna_7/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                      <li><a href="https://github.com/SamuWeb777" target="_blank" class="github"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                   </div>
+                </div>
+              </div>
+              <div class="grupo-2">
+                  <small>&copy; 2023 <b> Samiño</b> - Todos Los Derechos Reservados</small>
+              </div>
+            </footer>
+          </div>
         </body>
     </html>
